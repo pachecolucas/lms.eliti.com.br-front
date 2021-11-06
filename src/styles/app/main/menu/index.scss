@@ -1,0 +1,8 @@
+// MENU
+#app > main > .menu {
+  background: $color-400;
+  width: $MENU;
+  height: calc(100vh - $TOP);
+}
+
+@import "./challenges/index.scss";

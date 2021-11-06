@@ -1,11 +1,11 @@
-#container > header {
+#app > header {
   display: flex;
   background: $color-500;
   height: $TOP;
 }
 
 // LOGO
-#container > header > .logo {
+#app > header > .logo {
   width: $MENU;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 // CYCLES
-#container > header > .cycles {
+#app > header > .cycles {
   flex: auto;
   display: flex;
   line-height: $SPACE;
@@ -45,7 +45,7 @@
 }
 
 // USER
-#container > header > .user {
+#app > header > .user {
   flex: 0;
   display: flex;
   align-items: center;

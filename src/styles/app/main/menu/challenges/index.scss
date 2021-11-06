@@ -1,11 +1,11 @@
-#container > main > .menu > .challenges {
+#app > main > .menu > .challenges {
   display: flex;
   flex-direction: column;
   gap: $SPACE/2;
 }
 
 
-#container > main > .menu > .challenges > a {
+#app > main > .menu > .challenges > a {
   display: flex;
   align-items: center;
   gap: $SPACE / 1.5;

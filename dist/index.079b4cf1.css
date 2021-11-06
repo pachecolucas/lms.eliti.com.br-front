@@ -31,24 +31,24 @@ h2 {
   padding: 1rem;
   font-size: 0.85em;
 }
-#container {
+#app {
   min-height: 100vh;
 }
-#container > header {
+#app > header {
   display: flex;
   background: #191E23;
-  height: 50px;
+  height: 60px;
 }
-#container > header > .logo {
+#app > header > .logo {
   width: 270px;
   display: flex;
   align-items: center;
   padding: 0 1rem;
 }
-#container > header > .logo img {
+#app > header > .logo img {
   height: 2em;
 }
-#container > header > .cycles {
+#app > header > .cycles {
   flex: auto;
   display: flex;
   line-height: 1rem;
@@ -57,56 +57,53 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
 }
-#container > header > .cycles a {
+#app > header > .cycles a {
   padding: 1rem 2rem;
   color: #ffffff;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-#container > header > .cycles a .icon {
+#app > header > .cycles a .icon {
   font-size: 2rem;
 }
-#container > header > .cycles a .title strong {
+#app > header > .cycles a .title strong {
   display: block;
 }
-#container > header > .cycles a.active {
+#app > header > .cycles a.active {
   background: #010409;
 }
-#container > header > .cycles a.locked {
+#app > header > .cycles a.locked {
   opacity: 0.5;
 }
-#container > header > .user {
+#app > header > .user {
   flex: 0;
   display: flex;
   align-items: center;
   margin: 0 1rem;
   gap: 0.3333333333rem;
 }
-#container > header > .user img {
+#app > header > .user img {
   height: 2.5rem;
   border-radius: 50%;
 }
-#container > header > .user i {
+#app > header > .user i {
   margin-top: -0.4em;
 }
-#container > main {
+#app > main {
   display: flex;
 }
-#container > main > .menu {
+#app > main > .menu {
   background: #20262D;
   width: 270px;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
 }
-#container > main > .content {
-  flex: auto;
-}
-#container > main > .menu > .challenges {
+#app > main > .menu > .challenges {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-#container > main > .menu > .challenges > a {
+#app > main > .menu > .challenges > a {
   display: flex;
   align-items: center;
   gap: 0.6666666667rem;
@@ -115,13 +112,13 @@ h2 {
   border-bottom-left-radius: 9999px;
   padding: 1rem 1rem;
 }
-#container > main > .menu > .challenges > a .logo {
+#app > main > .menu > .challenges > a .logo {
   flex: 0;
 }
-#container > main > .menu > .challenges > a .logo img {
+#app > main > .menu > .challenges > a .logo img {
   height: 2.5rem;
 }
-#container > main > .menu > .challenges > a .name {
+#app > main > .menu > .challenges > a .name {
   flex: auto;
   color: #ffffff;
   font-size: 1em;
@@ -129,7 +126,7 @@ h2 {
   flex-direction: column;
   gap: 0.25rem;
 }
-#container > main > .menu > .challenges > a .name > strong {
+#app > main > .menu > .challenges > a .name > strong {
   font-family: "Barlow", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -138,16 +135,64 @@ h2 {
   display: block;
   line-height: 1em;
 }
-#container > main > .menu > .challenges > a .name > span {
+#app > main > .menu > .challenges > a .name > span {
   display: block;
   font-size: 0.85em;
   line-height: 1em;
 }
-#container > main > .menu > .challenges > a .status {
+#app > main > .menu > .challenges > a .status {
   flex: 0;
   color: #ffffff;
 }
-#container > main > .menu > .challenges > a.active {
+#app > main > .menu > .challenges > a.active {
   background: #010409;
+}
+#app > main > .content {
+  flex: auto;
+}
+#app > main > .content .ksas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+}
+#app > main > .content .ksas > .ksa {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 0.6666666667rem rgba(255, 255, 255, 0.3), inset 1px 1px 1rem rgba(255, 255, 255, 0.3);
+  background: black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#app > main > .content .ksas > .ksa > header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+#app > main > .content .ksas > .ksa > header a {
+  color: #ffffff;
+}
+#app > main > .content .ksas > .ksa > header i {
+  display: block;
+  padding: 0.3333333333rem;
+}
+#app > main > .content .ksas > .ksa > main {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  text-transform: none;
+  padding: 1rem 0;
+  font-family: "Barlow", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1em;
+}
+#app > main > .content .ksas > .ksa > footer {
+  flex: 0;
+}
+#app > main > .content .ksas > .ksa > footer input[type=range] {
+  width: 100%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.079b4cf1.css.map */
