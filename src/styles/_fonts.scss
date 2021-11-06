@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;0,700;1,200;1,400;1,600;1,700&family=Barlow:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+// FONT 
+@mixin _font {
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// NORMAL
+@mixin light {
+  @include _font;
+  font-weight: 200;
+}
+
+@mixin regular {
+  @include _font;
+  font-weight: 400;
+}
+
+@mixin bold {
+  @include _font;
+  font-weight: 700;
+}
+
+// ITALIC
+@mixin lightItalic {
+  @include light;
+  font-style: italic;
+}
+
+@mixin regularItalic {
+  @include regular;
+  font-style: italic;
+}
+
+@mixin boldItalic {
+  @include bold;
+  font-style: italic;
+}

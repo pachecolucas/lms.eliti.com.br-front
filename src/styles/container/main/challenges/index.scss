@@ -1,0 +1,48 @@
+#container > main > .menu > .challenges {
+  display: flex;
+  flex-direction: column;
+  gap: $SPACE/2;
+}
+
+
+#container > main > .menu > .challenges > a {
+  display: flex;
+  align-items: center;
+  gap: $SPACE / 1.5;
+  margin-left: $SPACE;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  padding: $SPACE/1 $SPACE;
+  .logo {
+    flex: 0;
+    img {
+      height: $SPACE * 2.5;
+    }
+  }
+  .name {
+    flex: auto;
+    color: $color-100;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: $SPACE / 4;
+    > strong {
+      @include bold;
+      font-size: 1.5em;
+      display: block;
+      line-height: 1em;
+    }
+    > span {
+      display: block;
+      font-size: .85em;
+      line-height: 1em;
+    }
+  }
+  .status {
+    flex: 0;
+    color: $color-100;
+  }
+  &.active {
+    background: $color-600;
+  }
+}

@@ -1,0 +1,18 @@
+#container > main {
+  display: flex;
+}
+
+// MENU
+#container > main > .menu {
+  background: $color-400;
+  width: $MENU;
+  height: calc(100vh - $TOP);
+}
+
+
+// CONTENT
+#container > main > .content {
+  flex: auto;
+}
+
+@import "./challenges/index.scss";

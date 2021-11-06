@@ -1,0 +1,61 @@
+#container > header {
+  display: flex;
+  background: $color-500;
+  height: $TOP;
+}
+
+// LOGO
+#container > header > .logo {
+  width: $MENU;
+  display: flex;
+  align-items: center;
+  padding: 0 $SPACE;
+  img {
+    height: 2em;
+  }
+}
+
+// CYCLES
+#container > header > .cycles {
+  flex: auto;
+  display: flex;
+  line-height: $SPACE;
+  @include regular;
+  a {
+    padding: $SPACE ($SPACE * 2);
+    color: $color-100;
+    display: flex;
+    align-items: center;
+    gap: $SPACE;
+    .icon {
+      font-size: $SPACE * 2;
+    }
+    .title {
+      strong {
+        display: block;
+      }
+    }
+    &.active {
+      background: $color-600;
+    }
+    &.locked {
+      opacity: .5;
+    }
+  }
+}
+
+// USER
+#container > header > .user {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 $SPACE;
+  gap: $SPACE / 3;
+  img {
+    height: $SPACE * 2.5;
+    border-radius: 50%;
+  }
+  i {
+    margin-top: -.4em;
+  }
+}

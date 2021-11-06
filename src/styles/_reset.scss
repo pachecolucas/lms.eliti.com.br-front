@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+  background: $color-600;
+}
+
+body {
+  text-transform: uppercase;
+  color: $color-100;
+  @include regular;
+}
+
+strong {
+  @include bold;
+}
+
+h2 {
+  @include regular;
+  padding: $SPACE;
+  font-size: .85em;
+}
