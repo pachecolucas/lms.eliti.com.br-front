@@ -1,12 +1,30 @@
 @import "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;0,700;1,200;1,400;1,600;1,700&family=Barlow:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap";
+.status-1 {
+  color: red;
+}
+.status-2 {
+  color: #FE7A15;
+}
+.status-3 {
+  color: #F8D90F;
+}
+.status-4 {
+  color: #D3DD18;
+}
+.status-5 {
+  color: #0191b4;
+}
+.status-6 {
+  color: #FFFFFF;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 html {
-  font-size: 14px;
+  font-size: 15px;
+  color: red;
   background: #010409;
 }
 body {
@@ -16,6 +34,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
+}
+a {
+  text-decoration: none;
 }
 strong {
   font-family: "Barlow", sans-serif;
@@ -30,6 +51,24 @@ h2 {
   font-weight: 400;
   padding: 1rem;
   font-size: 0.85em;
+}
+.modal {
+  background: #ffffff55;
+}
+.modal .modal-content {
+  background: #191E23;
+}
+.modal .modal-header {
+  color: #ffffff;
+}
+.modal .modal-header .btn-close {
+  color: #ffffff !important;
+}
+.modal .modal-title {
+  font-family: "Barlow", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
 }
 #app {
   min-height: 100vh;
@@ -149,28 +188,46 @@ h2 {
 }
 #app > main > .content {
   flex: auto;
+  background-color: #010409;
 }
 #app > main > .content .ksas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 1rem;
   gap: 1rem;
 }
 #app > main > .content .ksas > .ksa {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 0.6666666667rem rgba(255, 255, 255, 0.3), inset 1px 1px 1rem rgba(255, 255, 255, 0.3);
   background: black;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 1rem;
+  background: #191E23;
+}
+#app > main > .content .ksas > .ksa a {
+  color: #ffffff;
+}
+#app > main > .content .ksas > .ksa a:hover {
+  opacity: 0.8;
 }
 #app > main > .content .ksas > .ksa > header {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-#app > main > .content .ksas > .ksa > header a {
-  color: #ffffff;
+#app > main > .content .ksas > .ksa > header .text {
+  font-size: 0.7em;
+  font-family: "Barlow", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+}
+#app > main > .content .ksas > .ksa > header .percent {
+  font-size: 0.9em;
+  font-family: "Barlow", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
 }
 #app > main > .content .ksas > .ksa > header i {
   display: block;
@@ -178,7 +235,6 @@ h2 {
 }
 #app > main > .content .ksas > .ksa > main {
   flex: auto;
-  display: flex;
   flex-direction: column;
   text-transform: none;
   padding: 1rem 0;

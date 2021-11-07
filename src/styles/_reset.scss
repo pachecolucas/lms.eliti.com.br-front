@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
+  color: red;
   background: $color-600;
 }
 
@@ -14,6 +14,10 @@ body {
   text-transform: uppercase;
   color: $color-100;
   @include regular;
+}
+
+a {
+  text-decoration: none;
 }
 
 strong {
@@ -24,4 +28,21 @@ h2 {
   @include regular;
   padding: $SPACE;
   font-size: .85em;
+}
+
+
+.modal {
+  background: $color-300;
+  .modal-content {
+    background: $color-500;
+  }
+  .modal-header {
+    color: $color-100;
+    .btn-close {
+      color: $color-100 !important;
+    }
+  }
+  .modal-title {
+    @include bold;
+  }
 }

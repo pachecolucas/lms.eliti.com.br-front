@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   margin: 0 $SPACE;
-  gap: $SPACE / 3;
+  gap: math.div($SPACE, 3);
   img {
     height: $SPACE * 2.5;
     border-radius: 50%;

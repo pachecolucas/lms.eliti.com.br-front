@@ -1,18 +1,18 @@
 #app > main > .menu > .challenges {
   display: flex;
   flex-direction: column;
-  gap: $SPACE/2;
+  gap: math.div($SPACE, 2);
 }
 
 
 #app > main > .menu > .challenges > a {
   display: flex;
   align-items: center;
-  gap: $SPACE / 1.5;
+  gap: math.div($SPACE, 1.5);
   margin-left: $SPACE;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
-  padding: $SPACE/1 $SPACE;
+  padding: math.div($SPACE, 1) $SPACE;
   .logo {
     flex: 0;
     img {
@@ -25,7 +25,7 @@
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    gap: $SPACE / 4;
+    gap: math.div($SPACE, 4);
     > strong {
       @include bold;
       font-size: 1.5em;

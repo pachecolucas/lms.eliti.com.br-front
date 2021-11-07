@@ -2,7 +2,6 @@
 #app > main > .content .ksas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
-  padding: $SPACE;
   gap: $SPACE;
 }
 
@@ -10,11 +9,16 @@
 #app > main > .content .ksas > .ksa {
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px $SPACE / 1.5 rgba(255, 255, 255, .3),
-  inset 1px 1px $SPACE / 1 rgba(255, 255, 255, .3);
   background: black;
-  border-radius: $SPACE;
+  border-radius: calc($SPACE / 2);
   padding: $SPACE;
+  background: $color-500;
+  a {
+    color: $color-100;
+    &:hover {
+      opacity: .8;
+    }
+  }
 }
 
 // KSA HEADER
@@ -22,19 +26,24 @@
   flex: 1;
   display: flex;
   justify-content: space-between;
-  a {
-    color: $color-100;
+  align-items: center;
+  .text {
+    font-size: .7em;
+    @include bold;
+  }
+  .percent {
+    font-size: .9em;
+    @include bold;
   }
   i {
     display: block;
-    padding: $SPACE/3;
+    padding: math.div($SPACE, 3);
   }
 }
 
 // KSA MAIN
 #app > main > .content .ksas > .ksa > main {
   flex: auto;
-  display: flex;
   flex-direction: column;
   text-transform: none;
   padding: $SPACE 0;
