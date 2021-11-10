@@ -37,10 +37,21 @@
           <span class="title">Ciclo <strong>Backend</strong></span>
         </a>
       </nav>
-      <section class="user">
-        <img src="images/user.jpg" alt="lms">
-        <i class="fas fa-sort-down"></i>
-      </section>
+
+      <div class="dropdown">
+        <section class="user" id="ddMenuUser" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/user.jpg" alt="lms">
+          <i class="fas fa-sort-down"></i>
+        </section>
+        <!-- <a style="width: 100%;" class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="ddMenuUser" data-bs-toggle="dropdown" aria-expanded="false">
+          user
+        </a> -->
+
+        <ul style="width: 100%;" class="dropdown-menu">
+          <li><a class="dropdown-item" href="/user/logout">Sair</a></li>
+          <li><a class="dropdown-item" href="/epanel/student">Admin</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="menu">
