@@ -9,9 +9,7 @@
 #app > main > .content .ksas > .ksa {
   display: flex;
   flex-direction: column;
-  background: black;
   border-radius: calc($SPACE / 2);
-  padding: $SPACE;
   background: $color-500;
   a {
     color: $color-100;
@@ -21,41 +19,57 @@
   }
 }
 
-// KSA HEADER
-#app > main > .content .ksas > .ksa > header {
-  flex: 1;
+// HEADER
+#app > main > .content .ksas > .ksa > .dropdown > header {
+  cursor: pointer;
+  border-top-left-radius: math.div($SPACE, 2);
+  border-top-right-radius: math.div($SPACE, 2);
+  &:hover {
+    background: $color-400;
+  }
+}
+
+// HEADER / PROGRESS
+#app > main > .content .ksas > .ksa .progress {
+  height: .7em;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  border-top-left-radius: math.div($SPACE, 2);
+  border-top-right-radius: math.div($SPACE, 2);
+}
+
+// HEADER / INFOS 
+#app > main > .content .ksas > .ksa .infos  {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  .text {
-    font-size: .7em;
-    @include bold;
-  }
-  .percent {
-    font-size: .9em;
-    @include bold;
-  }
+  @include bold;
+  font-size: .8em;
+  padding: math.div($SPACE, 4) math.div($SPACE, 4) math.div($SPACE, 3);
+  // margin-bottom: $SPACE;
   i {
-    display: block;
-    padding: math.div($SPACE, 3);
+    margin-right: math.div($SPACE, 4);
   }
 }
 
-// KSA MAIN
-#app > main > .content .ksas > .ksa > main {
-  flex: auto;
-  flex-direction: column;
-  text-transform: none;
-  padding: $SPACE 0;
-  @include regular;
-  font-size: 1em;
-}
-
-// KSA footer
-#app > main > .content .ksas > .ksa > footer {
-  flex: 0;
-  input[type=range] {
+// HEADER / DROPDOWN
+.dropdown {
+  .dropdown-menu {
+    top: -10px;
     width: 100%;
-    cursor: pointer;
   }
+}
+
+// MAIN
+#app > main > .content .ksas > .ksa > main {
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $SPACE;
+  text-transform: none;
+  p {
+    @include regular;
+  }
+
 }

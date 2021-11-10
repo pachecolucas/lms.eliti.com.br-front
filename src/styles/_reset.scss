@@ -26,9 +26,13 @@ strong {
 
 h2 {
   @include regular;
-  padding: $SPACE;
-  font-size: .85em;
+  font-size: .85rem;
 }
+
+// h3 {
+//   @include regular;
+//   font-size: .95rem;
+// }
 
 
 .modal {
@@ -44,5 +48,12 @@ h2 {
   }
   .modal-title {
     @include bold;
+  }
+}
+
+.dropdown-menu.status {
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
   }
 }
