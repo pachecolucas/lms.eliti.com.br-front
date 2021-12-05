@@ -11,6 +11,7 @@
   flex-direction: column;
   border-radius: calc($SPACE / 2);
   background: $color-500;
+  margin: 1rem 0;
   a {
     color: $color-100;
     &:hover {
@@ -61,15 +62,23 @@
 
 // MAIN
 #app > main > .content .ksas > .ksa > main {
-
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: $SPACE;
   text-transform: none;
   p {
-    @include regular;
+    @include bold;
+    font-size: 1.2em;
   }
 
+}
+
+// FOOTER
+#app > main > .content .ksas > .ksa > footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
